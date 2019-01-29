@@ -22,10 +22,10 @@
 
 <h1>Custome Pipe for add Name before and after String:</h1>
 <br>
-  {{Name | uselessPipe:"Mr.":"the great"}}
+  {{Name | concatstring:"Mr.":"the great"}}
 <br>
 <h1>Custom Pipe for display list depend upon value of list</h1>
-<div *ngFor="let hero of (list | flyingHeroes)">
+<div *ngFor="let hero of (list | filterList)">
     {{hero.name}}
   </div>
 

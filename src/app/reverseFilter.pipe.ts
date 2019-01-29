@@ -17,17 +17,17 @@ export class ReverseStringClass implements PipeTransform{
 
 
 
-@Pipe({name: 'uselessPipe'})
-export class uselessPipe implements PipeTransform {
+@Pipe({name: 'concatstring'})
+export class concatStringPipe implements PipeTransform {
   transform(value: string, before: string, after: string): string {
     let newStr = `${before} ${value} ${after}`;
     return newStr;
   }
 }
 
-@Pipe({ name: 'flyingHeroes' })
-export class FlyingHeroesPipe implements PipeTransform {
-  transform(allHeroes: any[]) {
-    return allHeroes.filter(hero => hero.canFly);
+@Pipe({ name: 'filterList' })
+export class FilterListPipe implements PipeTransform {
+  transform(list: any[]) {
+    return list.filter(item => item.canFly);
   }
 }

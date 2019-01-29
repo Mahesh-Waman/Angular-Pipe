@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PipeExampleComponent } from './pipe-example/pipe-example.component';
 import {FormsModule} from '@angular/forms';
-import {ReverseStringClass,uselessPipe,FlyingHeroesPipe} from './reverseFilter.pipe'
+import {ReverseStringClass,concatStringPipe,FilterListPipe} from './reverseFilter.pipe'
 @NgModule({
   declarations: [
     AppComponent,
     PipeExampleComponent,
     ReverseStringClass,
-    uselessPipe,
-    FlyingHeroesPipe
+    concatStringPipe,
+    FilterListPipe
   ],
   imports: [
     BrowserModule,
