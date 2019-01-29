@@ -5,8 +5,7 @@
 <h4> in Built Pipe </h4>
 <label>Name:-</label>
 <input type="text" [(ngModel)]="Name">
-<!-- <input type="button" value="Uppercase pipe" (click)="upperClick()">
-<input type="button" value="Lowercase pipe" (click)="lowerClick()"> -->
+
 <br>
 {{Title}} to Custom and inBuilt Pipe Uppercase : <h4>{{Name | uppercase }} .</h4>
 {{Title}} to Custom and inBuilt Pipe Lowercase : <h4>{{Name | uppercase }} .</h4>
@@ -28,8 +27,15 @@
 <div *ngFor="let hero of (list | filterList)">
     {{hero.name}}
   </div>
-
   <br>
+  <h1>custom pipe for search on List </h1>
+  <label>Search Here:</label>
+  <input type="text" [(ngModel)]="searchList">
+  <br>
+  <label>List</label>
+  <div *ngFor="let item of list |listFilter:searchList">
+    {{item.name}}
+  </div>
   <h1>sorting a list by using sort function</h1>
   <div *ngFor="let hero of (list)">
       {{hero.name}}

@@ -31,3 +31,26 @@ export class FilterListPipe implements PipeTransform {
     return list.filter(item => item.canFly);
   }
 }
+@Pipe (
+    {
+        name :'listFilter'
+    }
+)
+
+export class ListFilterPipe implements PipeTransform{
+    transform (list : any [],searchString:string):any[]{
+        if(!list){return [];}
+        else if(!searchString){
+            return list;
+        }
+        else {
+            searchString=searchString.toLowerCase();
+
+            return list.filter(item=>{
+                return item.name.toLowerCase().includes(searchString);
+            })
+        }
+
+
+    }
+}

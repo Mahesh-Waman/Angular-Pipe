@@ -36,15 +36,8 @@ export class PipeExampleComponent implements OnInit {
     }));
   }
   get format()   { return this.toggle ? 'shortDate' : 'fullDate'; }
-  get ul(){
-    return this.toggle ? 'lowercase' : 'uppercase'; 
-  }
-  upperClick(){
-    this.filtervalue="uppercase";
-  }
-  lowerClick(){
-    this.filtervalue="lowercase"
-  }
+  
+ 
   toggleFormat(){
     this.toggle = !this.toggle;
   }
