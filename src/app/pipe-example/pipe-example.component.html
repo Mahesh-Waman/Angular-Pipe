@@ -1,0 +1,37 @@
+<h1>
+  Pipe Example
+</h1>
+
+<h4> in Built Pipe </h4>
+<label>Name:-</label>
+<input type="text" [(ngModel)]="Name">
+<!-- <input type="button" value="Uppercase pipe" (click)="upperClick()">
+<input type="button" value="Lowercase pipe" (click)="lowerClick()"> -->
+<br>
+{{Title}} to Custom and inBuilt Pipe Uppercase : <h4>{{Name | uppercase }} .</h4>
+{{Title}} to Custom and inBuilt Pipe Lowercase : <h4>{{Name | uppercase }} .</h4>
+
+<p>The {{Name}} birthday is {{ birthday | date:format }}</p>
+<p>The {{Name}} birthday is {{ birthday | date:"MM/dd/yy" }}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+
+<h1>Custom Pipe of Reversing String</h1>
+<br>
+{{Title}} to Custom and inBuilt Pipe Reverse String: <h4>{{Name | reverseString }}.
+<br>
+
+<h1>Custome Pipe for add Name before and after String:</h1>
+<br>
+  {{Name | uselessPipe:"Mr.":"the great"}}
+<br>
+<h1>Custom Pipe for display list depend upon value of list</h1>
+<div *ngFor="let hero of (list | flyingHeroes)">
+    {{hero.name}}
+  </div>
+
+  <br>
+  <h1>sorting a list by using sort function</h1>
+  <div *ngFor="let hero of (list)">
+      {{hero.name}}
+    </div>
+  
