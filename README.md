@@ -5,9 +5,10 @@
 # AngularPipe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
-To run project first of all do `npm install`.
-Then run command `ng serve`.
-In this project we do custom pipe for reversing string,for add some text before and after specific string,filter list on specific value of list item  and some inBuilt pipe function of Angular.
+
+  1) To run project first of all do `npm install`.
+  2) Then run command `ng serve`.
+  3) In this project we do custom pipe for reversing string,for add some text before and after specific string,filter list on specific value of list item  and some inBuilt pipe function of Angular.
 
 
 ## Development server
