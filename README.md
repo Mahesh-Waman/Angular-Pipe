@@ -11,9 +11,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   3) In this project we do custom pipe for 
       
         3.1) reversing string
+        
         3.2) add some text before and after specific string
+        
         3.3) filter list on specific value of list item
+        
         3.4) on search filter list
+        
         3.5) some inBuilt pipe function(uppercase,lowercase,date) of Angular.
 
 
